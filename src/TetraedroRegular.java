@@ -12,11 +12,12 @@ public class TetraedroRegular extends FiguraTridimensional {
         this.arista = 1;
     }
 
+    @Override
     public double CalcularVolumen(){
         double volumen = (Math.pow(2, (1/2)) * ((Math.pow(arista, 3))/12));
         return volumen;
     }
-
+    @Override
     public double CalcularSuperficie(){
         double superficie = (Math.pow(3, (1/2))) * (Math.pow(arista, 2));
         return superficie;
