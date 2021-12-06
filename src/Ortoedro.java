@@ -15,12 +15,14 @@ public class Ortoedro extends FiguraTridimensional {
         this.altura = 1;
     }
 
-    public abstract double CalcularVolumen {
+    public double CalcularVolumen(){
         double volumen = ancho * base * altura;
+        return volumen;
     }
 
-    public abstract double CalcularSuperficie {
+    public double CalcularSuperficie(){
         double superficie = 2 * (ancho * base) + 2 * (ancho * altura) + 2 * (base * altura);
+        return superficie;
     }
 
     @Override

@@ -11,12 +11,15 @@ public class Cubo extends FiguraTridimensional {
         this.lado = 1;
     }
 
-    public abstract double CalcularVolumen {
+    public double CalcularVolumen(){
         double volumen = Math.pow(lado, 3);
+        return volumen;
     }
 
-    public abstract double CalcularSuperficie {
+
+    public double CalcularSuperficie(){
         double superficie = 6 * (Math.pow(lado, 2));
+        return superficie;
     }
 
     @Override
